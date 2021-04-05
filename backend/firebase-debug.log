@@ -1,0 +1,28 @@
+[debug] [2020-04-27T14:11:39.510Z] ----------------------------------------------------------------------
+[debug] [2020-04-27T14:11:39.510Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2020-04-27T14:11:39.510Z] CLI Version:   8.1.1
+[debug] [2020-04-27T14:11:39.510Z] Platform:      win32
+[debug] [2020-04-27T14:11:39.510Z] Node Version:  v12.16.1
+[debug] [2020-04-27T14:11:39.510Z] Time:          Mon Apr 27 2020 19:41:39 GMT+0530 (India Standard Time)
+[debug] [2020-04-27T14:11:39.510Z] ----------------------------------------------------------------------
+[debug] [2020-04-27T14:11:39.510Z] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again.
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=444546063&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-04-27T14:11:49.563Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"4/zAFyLzyizv0vX4Xe2Fx-1-f6n56cDbtqfmK_AFZy0D5_hUdNlPX2oe75gx2mhxCFFMLd7JA8pyqh9MPK1YXyeEE","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"http://localhost:9005","grant_type":"authorization_code"}
+[debug] [2020-04-27T14:11:49.845Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 27 Apr 2020 14:11:50 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-27T14:11:49.876Z] Error: EBUSY: resource busy or locked, rename 'C:\Users\Admin\.config\configstore\firebase-tools.json.3511899345' -> 'C:\Users\Admin\.config\configstore\firebase-tools.json'
+    at Object.renameSync (fs.js:660:3)
+    at Function.writeFileSync [as sync] (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\write-file-atomic\index.js:244:8)
+    at Configstore.set all [as all] (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\configstore\index.js:61:20)
+    at Configstore.set (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\configstore\index.js:91:12)
+    at C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\login.js:41:21
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.
